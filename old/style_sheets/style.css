@@ -1,0 +1,490 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Customized  Scroll  */
+
+/*
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c2);
+}
+*/
+
+/* End of Customized  Scroll  */
+
+
+
+.nodrag{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+}
+
+:root {
+    --c1: #f3f4f5;
+    /*     white shade       */
+    --c2: #012F49;
+    /*     dhatura primary      */
+    --c3:#69e2f0 ;
+    /*       dhatura secondary          */
+    --c4: ;
+    /*                 */
+    --c5: ;
+    /*                 */
+    --c6: ;
+    /*                 */
+    --c7: ;
+    /*                 */
+    --c8: ;
+    /*                 */
+    --c9: ;
+    /*                 */
+    --c10: ;
+}
+
+.c1 {
+    color:#f3f4f5;
+}
+
+.c2 {
+    color: #012F49;
+}
+
+.c3 {
+    color:#69e2f0 ;
+}
+
+.c4 {
+    color: ;
+}
+
+.c5 {
+    color: ;
+}
+
+.c6 {
+    color: ;
+}
+
+.c7 {
+    color: ;
+}
+
+.c8 {
+    color: ;
+}
+
+.c9 {
+    color: ;
+}
+
+.c10 {
+    color: ;
+}
+
+
+.bgc1 {
+    background-color:#f3f4f5;
+}
+
+.bgc2 {
+    background-color:#012F49;
+}
+
+.bgc3 {
+    background-color: #69e2f0;
+}
+
+.bgc4 {
+    background-color: ;
+}
+
+.bgc5 {
+    background-color: ;
+}
+
+.bgc6 {
+    background-color: ;
+}
+
+.bgc7 {
+    background-color: ;
+}
+
+.bgc8 {
+    background-color: ;
+}
+
+.bgc9 {
+    background-color: ;
+}
+
+.bgc10 {
+    background-color: ;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*Fonts for Css*/
+
+
+.fon1 {}
+
+.fon2 {}
+
+.fon3 {}
+
+/*End of fonts section   */
+
+
+/*  Media Queries     */
+
+
+
+
+@media only screen and (max-width: 575px) {}
+
+/*Mobile Devices*/
+@media only screen and (max-width: 480px) {
+     .kn{
+    position:relative;
+    left:0% !important;
+    width: 100% !important;
+    background-color: var(--c2);
+    margin-bottom:5%;
+    
+}
+    .wdbox3{
+    font-size: 15px !important;
+}
+.box{
+    padding:20px !important;
+
+}
+}
+
+/*Sm Devices*/
+@media only screen and (max-width: 768px) {
+    
+    .kn{
+    position:relative;
+    left:0% !important;
+    width: 100% !important;
+    background-color: var(--c2);
+    margin-bottom:5%;
+    
+}
+    .wdbox3{
+    font-size: 15px !important;
+}
+.box{
+    padding:20px !important;
+
+}
+}
+
+/*medium devices*/
+@media only screen and (max-width: 1024px) {
+    .box2{
+    height:100vh;
+  } 
+  .box{
+    padding:30px !important;
+    
+
+}
+ .kn{
+    position:relative;
+    left:0% !important;
+    width: 100% !important;
+    background-color: var(--c2);
+    margin-bottom:5%;
+
+}
+.wdbox3{
+    font-size: 15px !important;
+}
+}
+
+/*Large devices*/
+@media only screen and (min-width: 1281px) {
+    .box{
+        height: 30vh !important;   
+        padding: 5% !important;
+
+    }
+    
+    .wdbox3{
+    font-size: 25px !important;
+}
+}
+
+
+/* End of Media Queries     */
+
+
+/*Nav bar start*/
+
+.navbar,
+.navbarsm {
+    background-color: var(--c2);
+    box-shadow: 0 2px 15px -5px rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+
+
+
+.nav-link {
+    color: var(--c1) !important;
+}
+
+
+.nav-item a {
+    padding: 8px 8px 8px 64px;
+    font-size: 17px;
+    color: var(--c2);
+    display: block;
+    cursor: pointer !important;
+}
+
+.nav-item a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--c2);
+    transition: 300ms;
+}
+
+.nav-item a:hover::after {
+    width: 65%;
+}
+
+
+
+.navbarsm {
+    position: fixed;
+    height: 6vh;
+    width: 100%;
+    background-color: var(--c2);
+    z-index: 15;
+    box-shadow: none;
+}
+
+#mainbox {
+    font-size: 1.8em;
+    transition: all .6s;
+    position: fixed;
+    right: 20px;
+    top: 1px;
+    color: var(--c1);
+    cursor: pointer !important;
+
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: var(--c2);
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 64px;
+    font-size: 20px;
+    color: var(--c1);
+    display: block;
+    cursor: pointer !important;
+}
+
+.sidemenu a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--c4);
+    transition: 300ms;
+}
+
+.sidemenu a:hover::after {
+    width: 15%;
+}
+
+.sidemenu a:hover,
+#mainbox:hover {
+    color: var(--c1);
+    transition: .5s;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 80%;
+    font-size: 36px;
+    margin-left: 32px;
+    color: var(--c1);
+    cursor: pointer;
+    z-index: 10 !important;
+}
+
+                                    /*Nav bar end*/
+
+.upbtn {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    color: var(--c1);
+    background-color: var(--c3);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+
+                                    /*  --------------------------- Codes Start's From Here ---------------------------------*/
+
+
+#sec1{
+    background-color: var(--c1);
+    width:100%;
+    background-image: url(pictures/bg1.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#sec1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding-bottom: 5%;
+}
+
+#sec2{
+   width:100%;
+    padding-bottom: 10%;
+    background-color: var(--c1);
+    padding-top: 5%;
+}
+
+.box{
+ border-radius: 23px;
+background: #fafcff;
+box-shadow:  6px 6px 12px #ebedf0,
+             -6px -6px 12px #ffffff;
+}
+
+
+.box:hover{
+    transition: 300ms;
+         box-shadow: 1px 1px 3px 2px #012f49;
+
+}
+
+.kn{
+    position:relative;
+    left:90%;
+    background-color: var(--c2);
+    
+}
+
+#sec3{
+    width: 100%;
+  padding-bottom: 5%;
+  background: linear-gradient(
+    to top,
+    var(--c1) 0%,
+    var(--c1) 50%,
+    var(--c2) 50%,
+    var(--c2) 100%
+  );
+    padding-bottom: 5%;
+
+}
+.ab{
+    border-radius:10px;
+    position: center;
+}
+
+#sec4{
+    width:100%;
+    margin-bottom:5%;
+    padding-top: 5%;
+    
+}
+.box2{
+
+        border-radius: 50px;
+border-radius: 50px;
+background: #f3f4f5;
+box-shadow:  21px 21px 42px #a5a6a7,
+             -21px -21px 42px #ffffff;
+}
+
+.td{
+    position: relative;
+    top: 140px;
+}
+
+.ftxt{
+    font-size: 18px;
+}
+
+#sec5{
+    width:100%;
+    padding-bottom: 5%;
+    background-color: var(--c2);
+}
+.wdbox3{
+    transition: 300ms;
+    background-color: var(--c1);
+    font-size: 25px;
+    border-radius:10px;
+    position:relative;
+height: 35vh;
+    
+}
+.wdicon2{
+    color: var(--c3);
+}
+
+
+
+
+
+
+
