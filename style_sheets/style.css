@@ -314,6 +314,11 @@ a {
 }
 
 
+.scchange:hover{
+    color: var(--c1);
+}
+
+
 
 
 
