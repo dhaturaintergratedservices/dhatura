@@ -28,22 +28,45 @@
 
 <body>
     <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-2 px-lg-2">
-                <a class="navbar-brand" href="#"><img src="style_sheets/pictures/logo1.png" class="logo" width="15%"></a>
-                <a class="navbar-brand" href="#page-top"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link style=color:black;" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link navcol" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-                       
-                    </ul>
-                </div>
+ <nav class="navbar navbar-expand-sm fixed-top p-4 d-none d-xl-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="style_sheets/pictures/logo.png" class="logo" width="15%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="" id="mynavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link scchange  " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link scchange " href="aboutus.html">About Us</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link scchange navcol" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link scchange " href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
+    <nav class="navbarsm d-xl-none">
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sidemenu">
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link navcol" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+
+            <div class="col-sm-10 mx-auto pt-5 m-5 navlogo">
+                <img src="style_sheets/pictures/logo.png" width="100%" class="p-5">
+            </div>
+            <div class="closebtn" onclick="closeFunction()">&times;</div>
+        </div>
+    </nav>
 
     <!-- --------------------------- Codes Start's From Here ----------------------------------->
 
@@ -54,40 +77,52 @@
         <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hello" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
-<!--
-         <div class="wave ">
 
-        <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill=" #f3f4f5">
-              <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z" id="Path"></path>
-            </g>
-          </g>
-        </svg>
-      </div>
--->
     </section>
+
+   <section id="clients" class="clients">
+        <div class="container ">
+
+            <div class="row d-flex align-items-center  ">
+
+<div id="owl2" class="owl-carousel owl-theme mt-3">
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/hastus.png" width="100%" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/achieversgrid.png" width="100%" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/green.png" width="100%" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/inkling_logo.png" width="100%" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/tiq.png" width="100%" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/manan.png" width="100%" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7 mx-auto d-block col-md-4 ">
+                    <img src="style_sheets/pictures/kama.png" width="100%" class="img-fluid" alt="">
+                </div>
+</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    
  <section id="service">
     <div class="container">
-  
-<!--
-   <div class="row">
-       <div class="projcard-container">
-		
-	<div class="projcard projcard-blue">
-		<div class="projcard-innerbox">
-			<img class="projcard-img" src="style_sheets/pictures/plans.jpg" />
-			<div class="projcard-textbox">
-				<div class="projcard-title">How can we help you?</div>
-				<div class="projcard-subtitle">We bring your ideas to life!</div>
-				<div class="projcard-bar"></div>
-				<div class="projcard-description">Dhatura Integrated Services provides all the possible services a client can ask for. Our quality services extend from call customer services through BPO to the most advanced services like web development, cyber security, and other services like SaaS, PaaS etc. Kindly have a look at the detailed classification below.</div>
-			</div>
-		</div>
-	</div>
-        </div>
--->
-        
+
        <div class="row">
            <div class="m-4 srs text-center">We are a comprehensive comany with services available in multiple domains like development, security, and services on basis of software, platform and similar operations.</div></div>
             <!-- feaure box -->
@@ -250,9 +285,7 @@
 
 
 
-    <div class="btn p-3 upbtn">
-        <i class="fa fa-caret-up" aria-hidden="true"></i>
-    </div>
+
     <script>
         $(document).ready(function() {
                     $('.upbtn').click(function() {
@@ -273,6 +306,32 @@
                     });
 
     </script>
+    <script type="text/javascript">
+
+                $('#owl2').owlCarousel({
+                    dots: false,
+                    // rtl:true,
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 2500,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            loop: true
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5,
+        
+                        }
+                    }
+                });
+
+</script>
 
     <script>
         new WOW().init();
@@ -292,6 +351,23 @@
             }
         });
     });
+
+        $(document).ready(function() {
+        $(window).scroll(function() {
+            var upbtn = $(window).scrollTop();
+            if (upbtn > 0) {
+                $(".navbar").css("background", "#ffffff");
+                $(".navbarsm").css("background", "#012F49");
+                $(".scchange").css("color", "#020202");
+                $(".navbar,.navbarsm").css("transition", ".5s");
+            } else {
+                $(".navbar,.navbarsm").css("background", "transparent");
+                $(".scchange").css("color", "#f3f4f5");
+                $(".navbar,.navbarsm").css("transition", ".5s");
+            }
+        });
+    });
+
 
 </script>
 
