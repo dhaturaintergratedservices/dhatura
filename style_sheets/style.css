@@ -330,7 +330,7 @@ a {
     width: 0px;
     height: 1px;
     display: block;
-    background: var(--c2);
+    background: var(--c4);
     transition: 300ms;
 }
 
