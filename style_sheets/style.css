@@ -492,8 +492,8 @@ a {
 }
 
 #hero .btn-get-started:hover {
-  background:var(--c2);
-  border-color: var(--c2);
+  background:var(--c4);
+  border-color: var(--c4);
 }
 
 @media (min-width: 1024px) {
